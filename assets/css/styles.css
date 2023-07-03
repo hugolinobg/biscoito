@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --ff-text: "DM Sans", sans-serif;
+  --ff-title: "Montserrat", sans-serif;
+  --ff-message: "Dancing Script", cursive;
+
+  --color-text: #34355b;
+  --color-message: #000000;
+  --color-text-button: #ffffff;
+  --bg-color-button: #ff9500;
+  --bg-color-button-hover: #e08402;
+  --bg-color-gradient-one: #2a0061;
+  --bg-color-gradient-two: #be68f8;
+}
+
+body {
+  background: linear-gradient(
+    45deg,
+    var(--bg-color-gradient-one),
+    var(--bg-color-gradient-two)
+  );
+  animation: gradient 10s ease infinite;
+  background-size: 200% 200%;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+body,
+p,
+.button {
+  font-family: var(--ff-text);
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.card {
+  text-align: center;
+
+  background: #ffffff;
+  box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+  padding: 2.8rem 3.4rem 3.4rem;
+  /* padding: 4.8rem 5.4rem 5.4rem; */
+}
+
+.screenTwo {
+  display: grid;
+  place-items: center;
+}
+
+h1,
+h2 {
+  font-family: var(--ff-title);
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2rem;
+
+  color: var(--color-text);
+}
+
+p {
+  padding-top: 1.4rem;
+  font-weight: 400;
+
+  color: var(--color-text);
+}
+
+span {
+  width: 29.3rem;
+
+  font-family: var(--ff-message);
+
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2rem;
+  text-align: center;
+
+  color: var(--color-message);
+
+  padding: 1rem;
+  margin: 1.7rem 0;
+  background: #e4edf1;
+  box-shadow: 2px 2px 2px rgba(85, 85, 85, 0.5);
+}
+
+/* .luckyPhrase {
+  transition: luckyPhrase 2s;
+} */
+
+.screenOne img {
+  padding-top: 2rem;
+  height: 160px;
+  width: 100%;
+}
+
+.screenTwo img {
+  padding-bottom: 1.7rem;
+
+  height: 160px;
+  width: 100%;
+}
+
+.button {
+  padding: 1rem;
+  text-decoration: none;
+  border-radius: 4px;
+  background: var(--bg-color-button);
+
+  font-weight: 700;
+  text-align: center;
+
+  color: var(--color-text-button);
+  cursor: pointer;
+
+  transition: background 0.3s;
+}
+
+.button:hover {
+  background: var(--bg-color-button-hover);
+}
+
+.hide {
+  display: none;
+}
+
+.openCookie:hover {
+  animation: treme 0.2s;
+  animation-iteration-count: 10;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* @keyframes luckyPhrase {
+  0% {
+    transform: translateX(0);
+    
+  }
+
+  100% {
+    transform: translateX(500px);
+  }
+} */
+
+@keyframes treme {
+  0% {
+    margin-left: 0;
+  }
+  25% {
+    margin-left: 5px;
+  }
+  50% {
+    margin-left: 0;
+  }
+  75% {
+    margin-left: -5px;
+  }
+  100% {
+    margin-left: 0;
+  }
+}
