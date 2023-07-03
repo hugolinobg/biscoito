@@ -27,7 +27,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 Projeto prático de uma Biscoito da Sorte da Trilha Explorer da Rocketseat.
 
-- [Acesse o projeto finalizado, online](https://hugolinobg.github.io/calculadoraIMC/)
+- [Acesse o projeto finalizado, online](https://hugolinobg.github.io/biscoito/)
 
 ## 🔖 Layout
 
